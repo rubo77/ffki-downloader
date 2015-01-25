@@ -8,13 +8,17 @@ $(document).ready(function() {
             fileExtension = '',
             fileEnding = '.bin',
             router;
+        
+        router = $('#download-form-router').val();
 
         switch ($('#download-form-type').val()) {
             case '0':
                 type = 'factory';
-
-                
-
+                /* there will be more than a *.bin as a filending
+                if (router == 'netgear-wndr3700' || router == 'netgear-wndr3700' || router == 'netgear-wndr3800'){
+                    fileEnding = '.img'
+                }
+                */
                 break;
             case '1':
                 type = 'sysupgrade';
@@ -35,10 +39,10 @@ $(document).ready(function() {
                 break;
             default:
                 branchdir = 'stable';
-                vnumber = '0.5.1-';
+                vnumber = '0.6-';
         }
 
-        router = $('#download-form-router').val();
+        
 
         if(router === '-1') {
             window.alert('Bitte wähle eine Router aus.');
