@@ -31,7 +31,7 @@ $(document).ready(function() {
         switch ($('#branch').val()) {
             case '0':
                 branchdir = 'stable';
-                vnumber = '0.5.1-';
+                vnumber = '0.6-';
                 break;
             case '1':
                 branchdir = 'experimental';
