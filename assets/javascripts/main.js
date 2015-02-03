@@ -28,19 +28,19 @@ $(document).ready(function() {
                 type = 'factory';
         }
 
-        switch ($('#branch').val()) {
-            case '0':
-                branchdir = 'stable';
-                vnumber = '0.6-';
-                break;
-            case '1':
-                branchdir = 'experimental';
-                vnumber = '0.6~beta20150104-';
-                break;
-            default:
-                branchdir = 'stable';
-                vnumber = '0.6-';
-        }
+            switch ($('#branch').val()) {
+                case '0':
+                    branchdir = 'stable';
+                    vnumber = '0.6-';
+                    break;
+                case '1':
+                    branchdir = 'experimental';
+                    vnumber = '0.6~beta20150104-';
+                    break;
+                default:
+                    branchdir = 'stable';
+                    vnumber = '0.6-';
+            }
 
         
 
