@@ -15,7 +15,7 @@
         <header>
             <img src="assets/images/freifunk_logo.png" alt="Freifunk Kiel Firmware">
             <h1>Freifunk Kiel</h1>
-            <h2>Firmware Version 0.6 herunterladen</h2>
+            <h2>Firmware Version 0.6 und 0.7-exp150420 herunterladen</h2>
         </header>
 
         <form class="download-form" id="download-form">
@@ -25,12 +25,21 @@
             </select>
             <select id="branch">
                 <option value="0">Stabile und getestete Version</option>
-                <!-- <option value="1">Experimentelle Version (für Profis)</option> -->
+                <option value="1">Experimentelle Version (für Profis)</option>
             </select>
             <select id="download-form-router">
                 <option value="-1">Bitte wähle einen Router</option>
+                <option value="buffalo-wzr-hp-ag300h-wzr-600dhp">Buffalo WZR HP AG300H</option>
+                <option value="buffalo-wzr-hp-ag300h-wzr-600dhp">Buffalo WZR 600DHP</option>
+                <option value="buffalo-wzr-hp-g450h">Buffalo WZR HP G450H</option>
+                <option value="d-link-dir-615-rev-c1">D-Link 615</option>
                 <option value="d-link-dir-825-rev-b1">D-Link 825</option>
+                <option value="gl-inet-6408a-v1">GL Inet 6408a Ver:1</option>
+                <option value="gl-inet-6416a-v1">GL Inet 6416a Ver:1</option>
                 <option value="linksys-wrt160nl">Linksys WRT 160 NL</option>
+                <option value="netgear-wndr3700">NetGear WNDR 3700</option>
+                <option value="netgear-wndr3700v2">NetGear WNDR 3700 Ver:2</option>
+                <option value="netgear-wndr3800">NetGear WNDR 3800</option>
                 <option value="tp-link-cpe210-v1.0">TP-Link CPE210 Ver:1</option>
                 <option value="tp-link-cpe220-v1.0">TP-Link CPE220 Ver:1</option>
                 <option value="tp-link-cpe510-v1.0">TP-Link CPE510 Ver:1</option>
@@ -39,15 +48,22 @@
                 <option value="tp-link-tl-mr3040-v1">TP-Link TL MR 3040 Ver:1</option>
                 <option value="tp-link-tl-mr3040-v2">TP-Link TL MR 3040 Ver:2</option>
                 <option value="tp-link-tl-mr3220-v1">TP-Link TL MR 3220 Ver:1</option>
+                <option value="tp-link-tl-mr3220-v2">TP-Link TL MR 3220 Ver:2</option>
                 <option value="tp-link-tl-mr3420-v1">TP-Link TL MR 3420 Ver:1</option>
                 <option value="tp-link-tl-mr3420-v2">TP-Link TL MR 3420 Ver:2</option>
+                <option value="tp-link-tl-wa701n-nd-v1">TP-Link TL WA 701 N/ND Ver:1</option>
                 <option value="tp-link-tl-wa750re-v1">TP-Link TL WA 750RE Ver:1</option>
                 <option value="tp-link-tl-wa801n-nd-v2">TP-Link TL WA 801 N/ND Ver:2</option>
                 <option value="tp-link-tl-wa850re-v1">TP-Link TL WA 850RE Ver:1</option>
+                <option value="tp-link-tl-wa860re-v1">TP-Link TL WA 860RE Ver:1</option>
                 <option value="tp-link-tl-wa901n-nd-v2">TP-Link TL WA 901 N/ND Ver:2</option>
+                <option value="tp-link-tl-wa901n-nd-v3">TP-Link TL WA 901 N/ND Ver:3</option>
                 <option value="tp-link-tl-wdr3500-v1">TP-Link TL WDR 3500 Ver:1</option>
                 <option value="tp-link-tl-wdr3600-v1">TP-Link TL WDR 3600 Ver:1</option>
                 <option value="tp-link-tl-wdr4300-v1">TP-Link TL WDR 4300 Ver:1</option>
+                <option value="tp-link-tl-wr1043n-nd-v1">TP-Link TL WR 1043 N/ND Ver:1</option>
+                <option value="tp-link-tl-wr1043n-nd-v2">TP-Link TL WR 1043 N/ND Ver:2</option>
+                <option value="tp-link-tl-wr2543n-nd-v1">TP-Link TL WR 2543 N/ND Ver:1</option>
                 <option value="tp-link-tl-wr703n-v1">TP-Link TL WR 703 N Ver:1</option>
                 <option value="tp-link-tl-wr710n-v1">TP-Link TL WR 710 N Ver:1</option>
                 <option value="tp-link-tl-wr740n-nd-v1">TP-Link TL WR 740 N/ND Ver:1</option>
@@ -56,6 +72,8 @@
                 <option value="tp-link-tl-wr741n-nd-v1">TP-Link TL WR 741 N/ND Ver:1</option>
                 <option value="tp-link-tl-wr741n-nd-v2">TP-Link TL WR 741 N/ND Ver:2</option>
                 <option value="tp-link-tl-wr741n-nd-v4">TP-Link TL WR 741 N/ND Ver:4</option>
+                <option value="tp-link-tl-wr743n-nd-v1">TP-Link TL WR 743 N/ND Ver:1</option>
+                <option value="tp-link-tl-wr743n-nd-v2">TP-Link TL WR 743 N/ND Ver:2</option>
                 <option value="tp-link-tl-wr841n-nd-v3">TP-Link TL WR 841 N/ND Ver:3</option>
                 <option value="tp-link-tl-wr841n-nd-v5">TP-Link TL WR 841 N/ND Ver:5</option>
                 <option value="tp-link-tl-wr841n-nd-v7">TP-Link TL WR 841 N/ND Ver:7</option>
@@ -66,20 +84,18 @@
                 <option value="tp-link-tl-wr941n-nd-v2">TP-Link TL WR 941 N/ND Ver:2</option>
                 <option value="tp-link-tl-wr941n-nd-v3">TP-Link TL WR 941 N/ND Ver:3</option>
                 <option value="tp-link-tl-wr941n-nd-v4">TP-Link TL WR 941 N/ND Ver:4</option>
-                <option value="tp-link-tl-wr1043n-nd-v1">TP-Link TL WR 1043 N/ND Ver:1</option>
-                <option value="tp-link-tl-wr1043n-nd-v2">TP-Link TL WR 1043 N/ND Ver:2</option>
+                <option value="tp-link-tl-wr941n-nd-v5">TP-Link TL WR 941 N/ND Ver:5</option>
                 <option value="ubiquiti-bullet-m">Ubiquiti Bullet M</option>
+                <option value="ubiquiti-loco-m-xw">Ubiquiti Loco M XW</option>
+                <option value="ubiquiti-nanostation-m-xw">Ubiquiti Nanostation M XW</option>
                 <option value="ubiquiti-nanostation-m">Ubiquiti Nanostation M</option>
+                <option value="ubiquiti-unifi-ap-pro">Ubiquiti UniFi AP Pro</option>
                 <option value="ubiquiti-unifi">Ubiquiti UniFi</option>
-                <option value="ubiquiti-unifiap-outdoor">Ubiquiti UniFi AP-Outdoor</option>
-                <!-- Future Router support
-                <option value="netgear-wndr3700">NetGear WNDR 3700</option>
-                <option value="netgear-wndr3700v2">NetGear WNDR 3700 Ver:2</option>
-                <option value="netgear-wndr3800">NetGear WNDR 3800</option> 
-                -->
+                <option value="ubiquiti-unifiap-outdoor">Ubiquiti UniFi AP-Outdoor</option>            
             </select>
+            
             <button class="button">Herunterladen</button>
-            <a class="button" href="/firmware/ffki-images-0.6.zip">Alle Images als ZIP herunterladen</a>
+            <a class="button" href="/firmware/ffki-images-0.6.zip">Alle Stable-Images als ZIP herunterladen</a>
         </form>
         
         <p>Die Freifunk Kiel Firmware steht unter der <a href="http://de.wikipedia.org/wiki/GNU_General_Public_License">GPL Lizenz</a>.</p><br>
@@ -90,3 +106,4 @@
         <script src="assets/javascripts/main.js" type="text/javascript"></script>
     </body>
 </html>
+
