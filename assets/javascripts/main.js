@@ -23,7 +23,7 @@ $(document).ready(function() {
                 fileExtension = '-sysupgrade';
                 break;
             default:
-                type = 'factory';
+				alert('error')
         }
 
             switch ($('#branch').val()) {

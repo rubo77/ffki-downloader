@@ -60,7 +60,11 @@ h2 {
 }
 
 .download-form .button:hover {
-    background: #ffb400;
+	background: #ffb400;
+}
+
+.download-form .featured {
+	background: #aa0044;
 }
 
 @media (max-width: 60em) {
