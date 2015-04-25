@@ -1,6 +1,51 @@
 $(document).ready(function() {
+	$('#manufacturer').on('change', function() {
+		selected=this.value;
+		first=[];
+		$("#manufacturer option").each(function() {
+			o=$(this).val();
+			if(o != '-1'){
+				if(o != selected && selected != '-1'){
+					$("#download-form-router option[value^='" + o + "-']").hide();
+				} else {
+					$("#download-form-router option[value^='" + o + "-']").show();
+				}
+			}
+		});
+		if(selected == 'tp-link'){
+			defaultSel=selected + "-tl-wr841n-nd-v9";
+			$("#download-form-router").val(defaultSel);
+		} else {
+			$("#download-form-router").val('-1');
+		}
+		$("#download-form-router").focus();
+		$("#download-form-router").select();
+	});
+	
+	$('#branch').on('change', function() {
+		updateButton()
+	});
+	
+	$('#download-form-type').on('change', function() {
+		updateButton()
+	});
+	
+	function updateButton(){
+		if($('#branch').val() == "1"){
+			button_html="Experimental";
+		} else {
+			button_html="Stable"
+		}
+		
+		if($('#download-form-type').val() == "0"){
+			button_html+=" Neuinstallation";
+		} else {
+			button_html+=" Update";
+		}
+		$("#download-button").html(button_html + " Herunterladen");
+	}
 
-    $('#download-form').submit(function( event ) {
+	$('#download-form').submit(function( event ) {
         event.preventDefault();
 
         var type = '',

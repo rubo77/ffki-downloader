@@ -26,10 +26,23 @@
                 <option value="0">Neuinstallation der Freifunk Firmware</option>
                 <option value="1">Update der Freifunk Firmware</option>
             </select>
+            
             <select id="branch">
                 <option value="0">Stabile und getestete Version</option>
                 <option value="1">Experimentelle Version (für Profis)</option>
             </select>
+            
+            <select id="manufacturer">
+                <option value="-1">alle Hersteller anzeigen</option>
+                <option value="buffalo">Buffalo</option>
+                <option value="d-link">D-Link</option>
+                <option value="gl-inet">GL Inet</option>
+                <option value="linksys">Linksys</option>
+                <option value="netgear">NetGear</option>
+                <option value="tp-link">TP-Link</option>
+                <option value="ubiquiti">Ubiquiti</option>
+            </select>
+            
             <select id="download-form-router">
                 <option value="-1">Bitte wähle einen Router</option>
                <optgroup label="Buffalo">
@@ -112,7 +125,7 @@
                </optgroup>          
             </select>
             
-            <button class="button">Herunterladen</button>
+            <button class="button" id="download-button">Herunterladen</button>
             <a class="button" href="/firmware/ffki-images-0.6.zip">Alle Stable-Images als ZIP herunterladen</a>
         </form>
         
