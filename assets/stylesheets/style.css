@@ -2,20 +2,26 @@
 body {
     line-height: 1.5;
     font-size: 100%;
-    font-family: sans-serif;
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     color: #2d2d2d;
 }
 
 header {
-    padding-top: 1em;
+	padding-top: 0em;
+	margin-top:-20px;
     text-align: center;
     font-weight: bold;
-    line-height: 1;
+	line-height: 1;
+	margin-bottom:-40px;
+}
+
+header img {
+	margin-bottom:-40px;
 }
 
 h1 {
     font-size: 2em;
-    text-transform: uppercase;
+	padding-bottom:5px;
 }
 
 h2 {
@@ -79,11 +85,14 @@ p {
 margin: auto;
 text-align: center;
 }
-p a{
-    color: #000;
-    text-decoration: none;
+a{
+	color: #DC0067;
 }
-p a:hover {
+h1 a{
+	color: #000;
+	text-decoration:none;
+}
+a:hover {
     color: #fff;
     background-color: #dc0067;
     text-decoration: none;
