@@ -16,7 +16,7 @@
             <a href="https://freifunk.in-kiel.de/"><img src="assets/images/freifunk_logo.png" alt="Freifunk Kiel Firmware"></a>
             <h1><a href="https://freifunk.in-kiel.de/">Freifunk Kiel</a></h1>
             <br>
-            <h2>Firmware Version 0.6 und 0.7-exp150420 herunterladen</h2>
+            <h2>Firmware Version 0.6 und 0.7-RC1 herunterladen</h2>
             <noscript><br><br><br><h1>Bitte aktiviere Javascript</h1>
             <a href="http://freifunk.in-kiel.de/firmware.html">Download ohne Javascript</a></noscript>
         </header>
@@ -26,23 +26,11 @@
                 <option value="0">Neuinstallation der Freifunk Firmware</option>
                 <option value="1">Update der Freifunk Firmware</option>
             </select>
-            
             <select id="branch">
                 <option value="0">Stabile und getestete Version</option>
+        <option value="2">RC Version 0.7 (für Profis)</option>
                 <option value="1">Experimentelle Version (für Profis)</option>
             </select>
-            
-            <select id="manufacturer">
-                <option value="-1">alle Hersteller anzeigen</option>
-                <option value="buffalo">Buffalo</option>
-                <option value="d-link">D-Link</option>
-                <option value="gl-inet">GL Inet</option>
-                <option value="linksys">Linksys</option>
-                <option value="netgear">NetGear</option>
-                <option value="tp-link">TP-Link</option>
-                <option value="ubiquiti">Ubiquiti</option>
-            </select>
-            
             <select id="download-form-router">
                 <option value="-1">Bitte wähle einen Router</option>
                <optgroup label="Buffalo">
@@ -125,7 +113,7 @@
                </optgroup>          
             </select>
             
-            <button class="button" id="download-button">Herunterladen</button>
+            <button class="button">Herunterladen</button>
             <a class="button" href="/firmware/ffki-images-0.6.zip">Alle Stable-Images als ZIP herunterladen</a>
         </form>
         
@@ -137,4 +125,3 @@
         <script src="assets/javascripts/main.js" type="text/javascript"></script>
     </body>
 </html>
-
